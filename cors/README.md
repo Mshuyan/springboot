@@ -238,7 +238,7 @@ public class CorsConfig extends WebMvcConfigurationSupport {
 }
 ```
 
-### 拦截器
+### 过滤器1
 
 全局跨域方式
 
@@ -256,6 +256,22 @@ public FilterRegistrationBean corsFilter() {
     config.addExposedHeader("Content-Disposition");
     source.registerCorsConfiguration("/**", config);
     return new FilterRegistrationBean<>(new CorsFilter(source));
+}
+```
+
+### 过滤器2
+
+```java
+@Bean
+public CorsFilter corsFilter() {
+    CorsConfiguration config = new CorsConfiguration();
+    config.addAllowedOrigin("http://localhost");
+    config.setAllowCredentials(true);
+    config.addAllowedMethod("*");
+    config.addAllowedHeader("*");
+    UrlBasedCorsConfigurationSource configSource = new UrlBasedCorsConfigurationSource();
+    configSource.registerCorsConfiguration("/**", config);
+    return new CorsFilter(configSource);
 }
 ```
 
