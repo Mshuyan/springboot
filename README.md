@@ -27,4 +27,54 @@
 
   + [普通类获取spring对象](./utils/普通类获取spring对象.md) 
 
++ 项目结构
+
+  > - controller
+  > - service
+  >   - impl
+  >
+  > xxxService.java
+  >
+  > - dao
+  >   - mapper
+  >   - impl
+  >
+  > xxxxDao.java
+  >
+  > - model
+  >
+  >   - vo（不要求分层时可省略）
+  >     - xxxx
+  >
+  >    xxxVo.java
+  >
+  >   - query
+  >     - xxxx
+  >
+  >    xxxxQuery.java
+  >
+  >   - dto
+  >     - xxxx
+  >
+  >    xxxxDto.java
+  >
+  >   - do（不要求分层时可省略）
+  >     - xxxx
+  >
+  >    xxxxDo.java
+  >
+  >   - entity
+  >
+  >  xxxxEntity.java
+  >
+  > - common
+  >   - config
+  >   - task
+  >   - util
+  >   - handler
+  >   - exception
+  >   - filter
+
+  
+
 
