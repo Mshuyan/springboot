@@ -16,4 +16,16 @@
 
     + 有效值：`application.properties`文件中`spring.profile.active`的有效值就是`value`的有效值
 
+    + 例
+
+      ```java
+      @Configuration
+      @Profile("dev")	// 仅在dev环境加载该配置
+      public class swaggerConfig{
+        ...
+      }
+      ```
+
+      
+
       

@@ -31,41 +31,46 @@
 
   > - controller
   > - service
+  >
   >   - impl
   >
-  > xxxService.java
+  >   xxxService.java
   >
   > - dao
   >   - mapper
   >   - impl
   >
-  > xxxxDao.java
+  >   xxxxDao.java
   >
   > - model
   >
-  >   - vo（不要求分层时可省略）
+  >   - vo
+  >
   >     - xxxx
   >
-  >    xxxVo.java
+  >       xxxVo.java
   >
-  >   - query
-  >     - xxxx
+  >     - query
   >
-  >    xxxxQuery.java
+  >       - xxxx
   >
-  >   - dto
-  >     - xxxx
+  >         xxxxQuery.java
   >
-  >    xxxxDto.java
+  >     - dto（不要求分层开发时可省略；service层入参出参都用dto）
   >
-  >   - do（不要求分层时可省略）
-  >     - xxxx
+  >       - xxxx
   >
-  >    xxxxDo.java
+  >         xxxxDto.java
   >
-  >   - entity
+  >     - do（不要求分层开发时可省略；dao层入参出参都用do）
   >
-  >  xxxxEntity.java
+  >       - xxxx
+  >
+  >         xxxxDo.java
+  >
+  >     - entity
+  >
+  >       xxxxEntity.java
   >
   > - common
   >   - config
