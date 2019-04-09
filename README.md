@@ -30,6 +30,7 @@
 + 项目结构
 
   > - controller
+  >
   > - service
   >
   >   - impl
@@ -47,30 +48,23 @@
   >   - vo
   >
   >     - xxxx
+  >       + xxxVo.java
   >
-  >       xxxVo.java
+  >   - query
+  >     - xxxx
+  >       + xxxxQuery.java
   >
-  >     - query
+  >   - dto（不要求分层开发时可省略；service层入参出参都用dto）
+  >     - xxxx
+  >       - xxxxDto.java
   >
-  >       - xxxx
+  >   - do（不要求分层开发时可省略；dao层入参出参都用do）
+  >     - xxxx
+  >       + xxxxDo.java
   >
-  >         xxxxQuery.java
+  >   - entity
   >
-  >     - dto（不要求分层开发时可省略；service层入参出参都用dto）
-  >
-  >       - xxxx
-  >
-  >         xxxxDto.java
-  >
-  >     - do（不要求分层开发时可省略；dao层入参出参都用do）
-  >
-  >       - xxxx
-  >
-  >         xxxxDo.java
-  >
-  >     - entity
-  >
-  >       xxxxEntity.java
+  >     xxxxEntity.java
   >
   > - common
   >   - config
