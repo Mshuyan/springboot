@@ -502,7 +502,7 @@
   }
   ```
 
-  ​
+  
 
 
 ## 2.知识点
@@ -519,9 +519,9 @@
 
   <img src="assets/2.png" width="600px"> 
 
-  ​
+  
 
-  ​
+  
 
 
 
@@ -723,7 +723,7 @@ person:
 
 - 作用：配置当前项目端口号
 
-- ​
+- 
 
   ```yaml
   server:
@@ -756,7 +756,7 @@ person:
   	profiles: prod
   ```
 
-  ​
+  
 
 ###### active
 
